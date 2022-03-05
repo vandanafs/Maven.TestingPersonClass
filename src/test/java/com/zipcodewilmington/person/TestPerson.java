@@ -12,14 +12,16 @@ public class TestPerson {
         // Given
         String expectedName = "";
         Integer expectedAge = Integer.MAX_VALUE;
+        System.out.println("exp:"+expectedName+ expectedName);
 
         // When
         Person person = new Person();
 
+
         // Then
         String actualName = person.getName();
         Integer actualAge = person.getAge();
-
+        System.out.println("actual:"+actualName +"age:"+actualName);
         Assert.assertEquals(expectedName, actualName);
         Assert.assertEquals(expectedAge, actualAge);
     }
